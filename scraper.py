@@ -11,4 +11,4 @@ for table in root.cssselect('table')[1]:
         'email': table[2].text_content(),
         }
 
-print findall.data('nome')
+print data('nome')
