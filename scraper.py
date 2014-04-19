@@ -5,7 +5,7 @@ html = requests.get("https://www.secom.planalto.gov.br/consea/boletins.nsf/01Con
 
 import lxml.html
 root = lxml.html.fromstring(html)
-table=root.cssselect('table')[1]:
+table=root.cssselect('table')[1]
 data={
 'nome': table[0].text_content(),
 'email': table[2].text_content(),
